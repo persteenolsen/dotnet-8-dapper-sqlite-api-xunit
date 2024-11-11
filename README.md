@@ -35,14 +35,12 @@ xUnit
 
 dotnet tool install -g dotnet-reportgenerator-globaltool
 
-# Run tests and view the code coverage
+# Run tests and view the code coverage by VS Code
 
 - Run the Tests by open the .NET Test Explorer ( click the Testing tab in the left side of VS Code)
 
 - After the Tests pass there should be a generated code coverage file at /WebAPI.Tests/TestResults/
 lcov.info. The file contains coverage data and is not meant to be directly human readable
-
-- Now open the WebAPI/Services/UserService.cs class and enable Coverage Gutters by clicking Watch in the VS Code status bar. The gutter next to the line numbers should be green for covered lines and red for uncovered lines, and the status bar should show the percentage that the file is covered
 
 - Now open the WebAPI/Services/UserService.cs class and enable Coverage Gutters by clicking Watch in the VS Code status bar. The gutter next to the line numbers should be green for covered lines and red for uncovered lines, and the status bar should show the percentage that the file is covered
 
@@ -54,7 +52,16 @@ lcov.info. The file contains coverage data and is not meant to be directly human
 
 - Run the task by selecting: Terminal > Run Task... > generate coverage report
 
-Now the setup to run unit tests and generate code coverage reports quickly and easily with VS Code for ASP.NET Core projects :-)
+That is a setup to run unit tests and generate code coverage reports quickly and easily with VS Code for ASP.NET Core projects :-)
+
+
+# Run tests outside VS Code
+
+- First make sure to Right Click the folder WebAPI.Tests by Powershell or Promt and type dotnet restore
+
+- Then Right Click the folder WebAPI.Tests by Powershell or Promt and type dotnet test
+
+- The results of the Tests will be displayed 
 
 
 
