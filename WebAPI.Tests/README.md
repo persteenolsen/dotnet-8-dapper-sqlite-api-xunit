@@ -1,10 +1,10 @@
 # dotnet-8-dapper-sqlite-crud-api-xunit
 
-.NET + VS Code + XUnit - Setup Unit Testing & Code Coverage in ASP.NET Core
+.NET + VS Code + xUnit - Setup Unit Testing & Code Coverage in ASP.NET Core
 
 # Last updated
 
-- 04-11-2024
+- 11-11-2024
 
 # NuGet Packages with commands
 - dotnet add package AutoFixture
@@ -14,7 +14,7 @@
 # VS Code Extensions
 
 - NET Core Test Explorer
-- Coverage Guttersode
+- Coverage Gutters
 
 # Unit Tests
 xUnit
